@@ -18,10 +18,21 @@
                     label: 'Dog Population (millions)',
                     backgroundColor: 'rgba(75, 192, 192, 0.2)',
                     borderColor: 'rgba(75, 192, 192, 1)',
-                    data: [525, 580, 630, 680, 730, 780, 830, 860, 880, 890, 900]
+                    data: [525, 580, 630, 680, 730, 780, 830, 860, 880, 890, 900],
+                    fill: false
+                }, {
+                    label: 'Projected Dog Population (millions)',
+                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
+                    borderColor: 'rgba(255, 99, 132, 1)',
+                    data: [540, 590, 650, 700, 750, 800, 850, 870, 890, 910, 930],
+                    fill: false
                 }]
             },
             options: {
+                animation: {
+                    duration: 2000, // animation duration in milliseconds
+                    easing: 'easeInOutBounce' // animation easing effect
+                },
                 scales: {
                     y: {
                         beginAtZero: true,
@@ -42,3 +53,4 @@
     </script>
 </body>
 </html>
+
